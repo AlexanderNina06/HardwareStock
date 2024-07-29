@@ -38,9 +38,9 @@ namespace Application.Services
             vm.Price = Product.Price;   
             vm.Quantity = Product.Quantity;
             vm.CategoryId = Product.CategoryId;
-            SaveProductViewModel vm2 = new();
+           
 
-            return vm2;	
+            return vm;	
 		}
 
 		public async Task Add(SaveProductViewModel vm)
