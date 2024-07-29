@@ -40,7 +40,7 @@ namespace Application.Services
             vm.CategoryId = Product.CategoryId;
             SaveProductViewModel vm2 = new();
 
-            return vm;	
+            return vm2;	
 		}
 
 		public async Task Add(SaveProductViewModel vm)
