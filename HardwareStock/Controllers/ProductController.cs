@@ -28,7 +28,7 @@ namespace HardwareStock.Controllers
         {
             SaveProductViewModel vm = new();
             vm.Categories = await _categoryService.GetAllViewModel(); 
-            return View("SaProduct", vm);
+            return View("SaveProduct", vm);
         }
         [HttpPost]
         public async Task<IActionResult> Create(SaveProductViewModel vm)
