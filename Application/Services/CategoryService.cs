@@ -45,9 +45,8 @@ namespace HardwareStock.Core.Application.Services
             Category category = new();
             category.Name = vm.Name;
             category.Image = vm.Image;
-            Category category2 = new();
 
-            await _categoryRepository.AddAsync(category2);
+            await _categoryRepository.AddAsync(category);
         }
         public async Task Update(SaveCategoryViewModel vm)
         {
